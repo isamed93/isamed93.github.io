@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Irene's Corner | Vision-Language Models</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Irene's Corner</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="../AboutMe.html">About Me</a></li>
+								<li><a href="../Posts.html">Posts</a></li>
+								<li><a href="../Contact.html">Get in contact</a></li>
+								<!-- <li><a href="#">Tempus</a></li>
+								<li><a href="#">Adipiscing</a></li> -->
+							</ul>
+						</nav>
+						<!-- <nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav> -->
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<!-- <section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section> -->
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<!-- <section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section> -->
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="posts/2024-06-07-vlm.html">Vision-Language Models</a></h2>
+										<p>Using LLMs to break down images into a machine-legible format.</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2024-06-07">June 7th, 2024</time>
+										<a href="AboutMe.html" class="author"><span class="name">Irene<br>Salazar Medina</span><img src="../images/profile_cropped.jpg" alt="" /></a>
+									</div>
+								</header>
+								<p><span class="image left"><img src="../images/posts/2024-06-07/home_robot.png" alt="" /></span></p>
+								<p>We've all heard about LLMs by now, they can be used as chatbots that can attempt to mimic a given persona, as search engines that can give us succinct summaries for our query, as document template writers, as UI-less Operating Systems, etc.</p>
+								<p>However, by now we have seen a few of the pitfalls of LLMs: their size require the model to run on the cloud which adds latency, their ML nature means that hallucinations can and will happen which affects people's trust in these products, they are auto-regressive and can't reason about the world which stops them from actualising as AGI, and finally, we have seen many dubious applications of LLMs that really make us question their usefulness.</p>
+								<p><br>I have recently come across Multiframe VLMs (like Claude 3 and Gemini 1.0 Pro Vision), the use of computer vision and LLMs to break down a 3D environment in a way that can be fed to a machine algorithm for further reasoning. The output of this is usually models that are able to interact with or reason about the environment around them.</p>
+								<p>For example, a machine is recording a person's PoV as they move around the house and then the user asks "Where did I leave my work badge?". The machine is then able to go through the previous footage and will detect that the work badge is located on top of the desk.</p>
+								<p><span class="image right"><img src="../images/posts/2024-06-07/OpenEQA_benchmark.png" alt="" /></span></p>
+								<p>Meta has also released their benchmarking method for judging these models in the form of OpenEQA (Open Embodied Question Answering) which gauge them according to how good they are with questions regarding spatial understanding, object localisation, functional reasoning, etc.</p>
+								<p>This is all particularly interesting to me because being able to digest a 3D environment for an AI is a problem that has been tackled through multiple different methods such as image segmentation, scene graphs, etc. Using LLMs to solve this part of the problem and use further methodology to reason about the environment and take action is a creative application of this new technology.</p>
+								<p><br><br>You could use this new technology to come up with a more proactive approach using a deeper understanding of humans and our internal thought processes. An example could be that instead of waiting for the human to ask where they left their badge, the machine could recognise that (a) the human is getting ready for work, (b) they haven't picked up their badge yet and (c) the human is wandering aimlessly and therefore assume that the user is looking for their badge and tell them where it is outright. Humans already assume others' internal thought processes in this way, via Theory of Mind.</p>
+								<p>At the end of the day, this technology will only really address the lack of reasoning in LLMs. There's still the size, latency and hallucinations issues to deal with but Rome wasn't built in a day!</p>
+								<p><b>What do you think? Are LLMs another tech that will pass us by or will we come up with interesting ways to adopt this technology into our lives?</b></p>
+									<ol>
+										Some interesting reading below!
+										<li><b>Paper: </b><a href="https://arxiv.org/html/2403.19838v1">Gopalkrishnan A., et al. (2024). <i>Multi-Frame, Lightweight & Efficient Vision-Language Models for Question Answering in Autonomous Driving</i></a></li>
+										<li><b>Paper: </b><a href="https://open-eqa.github.io/assets/pdfs/paper.pdf">Majumdar A., et al. (2024). <i>OpenEQA: Embodied Question Answering in the Era of Foundation Models</i></a></li>
+										<li><b>Meta blog post: </b><a href="https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/">OpenEQA: From word models to world models</a></li>
+									</ol>
+								<footer>
+									<ul class="stats">
+										<li><a href="index.html">Back to main</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/irene-salazar-medina/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<!-- <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li> -->
+							<li><a href="mailto:isamed1993@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Template Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
